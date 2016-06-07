@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-3"></div>
+		<div class="col-xs-6">
+			<div class="jumbotron intro">
+				Score: <%= @score%>
+				<h2>this story is told with words</h2>
+				<hr>
+				<%= button_to 'button button who\'s got the button', intro_path, method: :get, :class => 'btn btn-info' %>
+				<%# button_to 'Increment', root_path, method: :get %>
+			</div>
+		<div class="col-xs-3"></div>
+		</div>
+	</div>
+</div>
