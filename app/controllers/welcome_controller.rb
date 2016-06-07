@@ -19,6 +19,5 @@ class WelcomeController < ApplicationController
 
 	def users
 		@users = User.all
-		@user = User.find_by_id(1)
 	end
 end
