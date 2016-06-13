@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root to: 'welcome#splash'
   get '/intro', to: 'welcome#intro' 
-  post '/', to: 'welcome#increment(@score)'
+  post '/', to: 'welcome#increment'
 
-  get '/users', to: 'welcome#users', as: 'user_index'
+  get '/users', to: 'welcome#users', as: 'users_index'
+  post '/users', to: 'welcome#increment'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
